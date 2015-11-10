@@ -26,10 +26,10 @@ public class TriviaConsoleGUI {
         
         int action = -1;
         System.out.println("Choose one of the following:");
-        System.out.println("1 - Trivia questions");
-        System.out.println("2 - To add a Trivia question");
-        System.out.println("3 - To delete a Trivia question");
-        System.out.println("4 - To save a Trivia question");
+        System.out.println("1 - Start game");
+        System.out.println("2 - add a Trivia question");
+        System.out.println("3 - delete a Trivia question");
+        System.out.println("4 - save a Trivia question");
         
         action = s.nextInt();
         while (0 > action || action > 4 ) {
