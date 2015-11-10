@@ -19,8 +19,9 @@ public class TriviaConsoleGUI {
     static ArrayList<String> askedQuestions = new ArrayList<String>();
             
     public static void actionMenu() {
-        TriviaGame TG = new TriviaGame();
-        TG.loadFile();
+        
+        //TG.loadFile(); // delete this method from triviaGame
+        TriviaGame TG = TriviaGame.loadFromFile();
         
         int action = -1;
         System.out.println("Choose one of the following:");

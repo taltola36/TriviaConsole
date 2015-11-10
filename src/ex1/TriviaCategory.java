@@ -7,36 +7,36 @@ package ex1;
 import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author tal
  */
-//@XmlRootElement
+@XmlType(name = "category")
 public class TriviaCategory {
 
     private ArrayList<TriviaQuestion> questions;
     private String nameOfCategory;
-    
-    TriviaCategory(String name) {
+
+    public TriviaCategory(String name) {
         nameOfCategory = name;
         questions = new ArrayList<>();
     }
 
-    @XmlElement(name="question")
+    @XmlAttribute(name = "name")
+    public String getNameOfCategory() {
+        return nameOfCategory;
+    }
+
+    @XmlElement(name = "question")
     public ArrayList<TriviaQuestion> getQuestions() {
         return questions;
-    }
-    
-    @XmlAttribute
-    public String getNameOfCategory(){
-        return nameOfCategory;
     }
 
     public void addQuestion(String question, boolean isOpen, int difficultyLevel, String... answers) {
         TriviaQuestion TQ = new TriviaQuestion(question, isOpen, difficultyLevel);
-        
+
         TriviaAnswer ans;
         for (int i = 0; i < answers.length; i++) {
             if (i == 0) {
@@ -44,10 +44,10 @@ public class TriviaCategory {
             } else {
                 ans = new TriviaAnswer(false, answers[i]);
             }
-            
+
             TQ.addAnswers(ans);
         }
-        
+
         questions.add(TQ);
     }
 

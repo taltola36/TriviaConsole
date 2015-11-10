@@ -1,49 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <triviaGame>
-    <category nameOfCategory="Movies">
-        <question text="באיזה סרט שיחק..?">
-            <answers>
-                <answer>בלהבלה</answer>
+    <category name="Movies">
+        <question text="מי כוכב הסרט אייר פורס 1?">
+            <answer text="אריסון פורד">
                 <isTrue>true</isTrue>
-            </answers>
+            </answer>
             <difficulty>1</difficulty>
             <isOpen>true</isOpen>
         </question>
-        <question text="באיזה סרט לא שיחק..?">
-            <answers>
-                <answer>בלהבלה</answer>
+        <question text="בסרט פורסט גאמפ מה כוכב הסרט מכר שגרם להתעשר?">
+            <answer text="שרימפס">
                 <isTrue>true</isTrue>
-            </answers>
-            <answers>
-                <answer>בלהבלהבהל</answer>
-                <isTrue>false</isTrue>
-            </answers>
-            <difficulty>2</difficulty>
-            <isOpen>false</isOpen>
-        </question>
-    </category>
-    <category nameOfCategory="History">
-        <question text="מתי הייתה מלחמת העולם הראשונה...?">
-            <answers>
-                <answer>בלהבלה</answer>
-                <isTrue>true</isTrue>
-            </answers>
-            <answers>
-                <answer>בלהבלהבהל</answer>
-                <isTrue>false</isTrue>
-            </answers>
-            <difficulty>2</difficulty>
-            <isOpen>false</isOpen>
-        </question>
-    </category>
-    <category nameOfCategory="Animals">
-        <question text="לאיזה חיה יש...?">
-            <answers>
-                <answer>כלב</answer>
-                <isTrue>true</isTrue>
-            </answers>
+            </answer>
             <difficulty>2</difficulty>
             <isOpen>true</isOpen>
+        </question>
+        <question text="איזה סרט פרסם את אושרי כהן?">
+            <answer text="הכוכבים של שלומי">
+                <isTrue>true</isTrue>
+            </answer>
+            <difficulty>3</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+        <question text="?האם ג'קי צ'אן היה ניצב בסרטיו של ברוס לי">
+            <answer text="yes">
+                <isTrue>true</isTrue>
+            </answer>
+            <answer text="no">
+                <isTrue>false</isTrue>
+            </answer>
+            <difficulty>1</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+        <question text="באיזה סרט מופיע ג'אפר?">
+            <answer text="Aladin">
+                <isTrue>true</isTrue>
+            </answer>
+            <answer text="Pokahontas">
+                <isTrue>false</isTrue>
+            </answer>
+            <answer text="Mulan">
+                <isTrue>false</isTrue>
+            </answer>
+            <difficulty>2</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+        <question text="עלילת הסרט הבופור התרחשה ב?">
+            <answer text="Lebanon">
+                <isTrue>true</isTrue>
+            </answer>
+            <answer text="Eygept">
+                <isTrue>false</isTrue>
+            </answer>
+            <answer text="Yarden">
+                <isTrue>false</isTrue>
+            </answer>
+            <difficulty>3</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+    </category>
+    <category name="History">
+        <question text="איזו עיר בישראל נקראת על שמו של הקיסר הרומי טיבריוס">
+            <answer text="טבריה">
+                <isTrue>true</isTrue>
+            </answer>
+            <difficulty>1</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+        <question text="חכם יווני הנחשב לאבי תורת הגיאומטריה">
+            <answer text="אוקלידס">
+                <isTrue>true</isTrue>
+            </answer>
+            <difficulty>2</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+        <question text="כינויי של חברי המפלגה הקומוניסטית ברוסיה לפני עלייתם לשלטון">
+            <answer text="בולשביקים">
+                <isTrue>true</isTrue>
+            </answer>
+            <difficulty>3</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+        <question text="האם מדינת ישראל הוקמה ב1948">
+            <answer text="yes">
+                <isTrue>true</isTrue>
+            </answer>
+            <answer text="no">
+                <isTrue>false</isTrue>
+            </answer>
+            <difficulty>1</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+        <question text="שם החללית הרוסית הראשונה בחלל">
+            <answer text="Spotnic">
+                <isTrue>true</isTrue>
+            </answer>
+            <answer text="Farom">
+                <isTrue>false</isTrue>
+            </answer>
+            <answer text="Halalit">
+                <isTrue>false</isTrue>
+            </answer>
+            <difficulty>3</difficulty>
+            <isOpen>false</isOpen>
         </question>
     </category>
 </triviaGame>

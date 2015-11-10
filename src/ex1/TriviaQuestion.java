@@ -8,12 +8,13 @@ import java.util.ArrayList;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author tal
  */
-//@XmlRootElement
+@XmlType(name = "question")
 public class TriviaQuestion {
 
     private int difficulty;
@@ -27,28 +28,28 @@ public class TriviaQuestion {
         this.isOpen = isOpen;
         this.difficulty = difficultyLevel;
     }
-    
-    @XmlAttribute(name="text")
-    public String getQuestion(){
+
+    @XmlAttribute(name = "text")
+    public String getQuestion() {
         return question;
     }
-    
-    @XmlElement
-    public boolean getIsOpen(){
+
+    @XmlElement(name = "isOpen")
+    public boolean getIsOpen() {
         return isOpen;
     }
-    
-    @XmlElement
-    public int getDifficulty(){
+
+    @XmlElement(name = "difficulty")
+    public int getDifficulty() {
         return difficulty;
+    }
+
+    @XmlElement(name = "answer")
+    public ArrayList<TriviaAnswer> getAnswers() {
+        return answers;
     }
 
     public void addAnswers(TriviaAnswer ans) {
         answers.add(ans);
-    }
-
-    @XmlElement
-    public ArrayList<TriviaAnswer> getAnswers() {
-        return answers;
     }
 }

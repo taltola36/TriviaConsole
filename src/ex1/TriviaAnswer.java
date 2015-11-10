@@ -4,31 +4,33 @@
  */
 package ex1;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 
 /**
  *
  * @author tal
  */
-//@XmlRootElement
+@XmlType(name = "answer")
 public class TriviaAnswer {
 
     private String answer;
     private boolean isTrue;
-    
-    public TriviaAnswer(boolean isTrue, String answer){
+
+    public TriviaAnswer(boolean isTrue, String answer) {
         this.answer = answer;
         this.isTrue = isTrue;
     }
-    
-    @XmlElement
-    public String getAnswer(){
+
+    @XmlAttribute(name = "text")
+    public String getAnswer() {
         return answer;
     }
-    
-    @XmlElement
-    public boolean getIsTrue(){
+
+    @XmlElement(name = "isTrue")
+    public boolean getIsTrue() {
         return isTrue;
     }
 }
