@@ -73,23 +73,23 @@ public class TriviaGame {
         }
     }
 
-    public void loadFile() {
-        // for testing
-        categoris = new ArrayList<>();
-        categoris.add(new TriviaCategory("Movies"));
-        categoris.add(new TriviaCategory("History"));
-        categoris.get(0).addQuestion("מי כוכב הסרט אייר פורס 1?", true, 1, "אריסון פורד");
-        categoris.get(0).addQuestion("בסרט פורסט גאמפ מה כוכב הסרט מכר שגרם להתעשר?", true, 2, "שרימפס");
-        categoris.get(0).addQuestion("איזה סרט פרסם את אושרי כהן?", true, 3, "הכוכבים של שלומי");
-        categoris.get(0).addQuestion("?האם ג'קי צ'אן היה ניצב בסרטיו של ברוס לי", false, 1, "yes", "no");
-        categoris.get(0).addQuestion("באיזה סרט מופיע ג'אפר?", false, 2, "Aladin", "Pokahontas", "Mulan");
-        categoris.get(0).addQuestion("עלילת הסרט הבופור התרחשה ב?", false, 3, "Lebanon", "Eygept", "Yarden");
-        categoris.get(1).addQuestion("איזו עיר בישראל נקראת על שמו של הקיסר הרומי טיבריוס", true, 1, "טבריה");
-        categoris.get(1).addQuestion("חכם יווני הנחשב לאבי תורת הגיאומטריה", true, 2, "אוקלידס");
-        categoris.get(1).addQuestion("כינויי של חברי המפלגה הקומוניסטית ברוסיה לפני עלייתם לשלטון", true, 3, "בולשביקים");
-        categoris.get(1).addQuestion("האם מדינת ישראל הוקמה ב1948", false, 1, "yes", "no");
-        categoris.get(1).addQuestion("שם החללית הרוסית הראשונה בחלל", false, 3, "Spotnic", "Farom", "Halalit");
-    }
+//    public void loadFile() {
+//        // for testing
+//        categoris = new ArrayList<>();
+//        categoris.add(new TriviaCategory("Movies"));
+//        categoris.add(new TriviaCategory("History"));
+//        categoris.get(0).addQuestion("מי כוכב הסרט אייר פורס 1?", true, 1, "אריסון פורד");
+//        categoris.get(0).addQuestion("בסרט פורסט גאמפ מה כוכב הסרט מכר שגרם להתעשר?", true, 2, "שרימפס");
+//        categoris.get(0).addQuestion("איזה סרט פרסם את אושרי כהן?", true, 3, "הכוכבים של שלומי");
+//        categoris.get(0).addQuestion("?האם ג'קי צ'אן היה ניצב בסרטיו של ברוס לי", false, 1, "yes", "no");
+//        categoris.get(0).addQuestion("באיזה סרט מופיע ג'אפר?", false, 2, "Aladin", "Pokahontas", "Mulan");
+//        categoris.get(0).addQuestion("עלילת הסרט הבופור התרחשה ב?", false, 3, "Lebanon", "Eygept", "Yarden");
+//        categoris.get(1).addQuestion("איזו עיר בישראל נקראת על שמו של הקיסר הרומי טיבריוס", true, 1, "טבריה");
+//        categoris.get(1).addQuestion("חכם יווני הנחשב לאבי תורת הגיאומטריה", true, 2, "אוקלידס");
+//        categoris.get(1).addQuestion("כינויי של חברי המפלגה הקומוניסטית ברוסיה לפני עלייתם לשלטון", true, 3, "בולשביקים");
+//        categoris.get(1).addQuestion("האם מדינת ישראל הוקמה ב1948", false, 1, "yes", "no");
+//        categoris.get(1).addQuestion("שם החללית הרוסית הראשונה בחלל", false, 3, "Spotnic", "Farom", "Halalit");
+//    }
 
     public static TriviaGame loadFromFile() {
 

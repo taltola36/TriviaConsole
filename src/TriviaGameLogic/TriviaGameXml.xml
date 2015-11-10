@@ -23,36 +23,36 @@
             <isOpen>true</isOpen>
         </question>
         <question text="?האם ג'קי צ'אן היה ניצב בסרטיו של ברוס לי">
-            <answer text="yes">
+            <answer text="כן">
                 <isTrue>true</isTrue>
             </answer>
-            <answer text="no">
+            <answer text="לא">
                 <isTrue>false</isTrue>
             </answer>
             <difficulty>1</difficulty>
             <isOpen>false</isOpen>
         </question>
         <question text="באיזה סרט מופיע ג'אפר?">
-            <answer text="Aladin">
+            <answer text="אלאדין">
                 <isTrue>true</isTrue>
             </answer>
-            <answer text="Pokahontas">
+            <answer text="פוקהונטס">
                 <isTrue>false</isTrue>
             </answer>
-            <answer text="Mulan">
+            <answer text="מולאן">
                 <isTrue>false</isTrue>
             </answer>
             <difficulty>2</difficulty>
             <isOpen>false</isOpen>
         </question>
         <question text="עלילת הסרט הבופור התרחשה ב?">
-            <answer text="Lebanon">
+            <answer text="לבנון">
                 <isTrue>true</isTrue>
             </answer>
-            <answer text="Eygept">
+            <answer text="מצרים">
                 <isTrue>false</isTrue>
             </answer>
-            <answer text="Yarden">
+            <answer text="ירדן">
                 <isTrue>false</isTrue>
             </answer>
             <difficulty>3</difficulty>
@@ -82,23 +82,23 @@
             <isOpen>true</isOpen>
         </question>
         <question text="האם מדינת ישראל הוקמה ב1948">
-            <answer text="yes">
+            <answer text="כן">
                 <isTrue>true</isTrue>
             </answer>
-            <answer text="no">
+            <answer text="לא">
                 <isTrue>false</isTrue>
             </answer>
             <difficulty>1</difficulty>
             <isOpen>false</isOpen>
         </question>
         <question text="שם החללית הרוסית הראשונה בחלל">
-            <answer text="Spotnic">
+            <answer text="ספוטניק">
                 <isTrue>true</isTrue>
             </answer>
-            <answer text="Farom">
+            <answer text="פארום">
                 <isTrue>false</isTrue>
             </answer>
-            <answer text="Halalit">
+            <answer text="חללית">
                 <isTrue>false</isTrue>
             </answer>
             <difficulty>3</difficulty>
