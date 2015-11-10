@@ -22,6 +22,10 @@ public class TriviaCategory {
     public ArrayList<TriviaQuestion> getQuestions() {
         return questions;
     }
+    
+    public String getNameOfCategory(){
+        return nameOfCategory;
+    }
 
     public void addQuestion(String question, boolean isOpen, int difficultyLevel, String... answers) {
         TriviaQuestion TQ = new TriviaQuestion(question, isOpen, difficultyLevel);
@@ -36,6 +40,7 @@ public class TriviaCategory {
         }
     }
 
-    public void deleteQuestion(String questionType, int level, int numOfOptions) {
+    public void deleteQuestion(int j) {
+        questions.remove(j);
     }
 }

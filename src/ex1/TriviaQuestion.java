@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class TriviaQuestion {
 
     private int difficultyLevel;
-    public String question;
+    private String question;
     private boolean isOpen;
     private ArrayList<TriviaAnswer> answers;
 
@@ -21,6 +21,14 @@ public class TriviaQuestion {
         this.question = question;
         this.isOpen = isOpen;
         this.difficultyLevel = difficultyLevel;
+    }
+    
+    public boolean getType(){
+        return isOpen;
+    }
+    
+    public int getDifficulty(){
+        return difficultyLevel;
     }
 
     public void addAnswers(TriviaAnswer ans) {
