@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<triviaGame>
+    <category nameOfCategory="Movies">
+        <question text="באיזה סרט שיחק..?">
+            <answers>
+                <answer>בלהבלה</answer>
+                <isTrue>true</isTrue>
+            </answers>
+            <difficulty>1</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+        <question text="באיזה סרט לא שיחק..?">
+            <answers>
+                <answer>בלהבלה</answer>
+                <isTrue>true</isTrue>
+            </answers>
+            <answers>
+                <answer>בלהבלהבהל</answer>
+                <isTrue>false</isTrue>
+            </answers>
+            <difficulty>2</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+    </category>
+    <category nameOfCategory="History">
+        <question text="מתי הייתה מלחמת העולם הראשונה...?">
+            <answers>
+                <answer>בלהבלה</answer>
+                <isTrue>true</isTrue>
+            </answers>
+            <answers>
+                <answer>בלהבלהבהל</answer>
+                <isTrue>false</isTrue>
+            </answers>
+            <difficulty>2</difficulty>
+            <isOpen>false</isOpen>
+        </question>
+    </category>
+    <category nameOfCategory="Animals">
+        <question text="לאיזה חיה יש...?">
+            <answers>
+                <answer>כלב</answer>
+                <isTrue>true</isTrue>
+            </answers>
+            <difficulty>2</difficulty>
+            <isOpen>true</isOpen>
+        </question>
+    </category>
+</triviaGame>

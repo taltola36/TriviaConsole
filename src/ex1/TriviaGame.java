@@ -4,12 +4,18 @@
  */
 package ex1;
 
+import java.io.File;
 import java.util.ArrayList;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author tal
  */
+@XmlRootElement
 public class TriviaGame {
 
     private ArrayList<TriviaCategory> categoris;
@@ -39,12 +45,26 @@ public class TriviaGame {
     }
 
     public void saveToFile() {
+        try {
+            File file = new File("TriviaGame.xml");
+            JAXBContext jaxbContext = JAXBContext.newInstance(TriviaGame.class);
+            Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+
+            // output pretty printed
+            jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            jaxbMarshaller.marshal(this, file);
+            jaxbMarshaller.marshal(this, System.out);
+        } catch (Exception e) {
+            String errMsg = e.getMessage();
+        }
     }
 
-
-    public ArrayList<TriviaCategory> getCategories(){
+    @XmlElement(name="category")
+    public ArrayList<TriviaCategory> getCategories() {
         return categoris;
     }
+
     public void loadFile() {
         // for testing
         categoris = new ArrayList<>();

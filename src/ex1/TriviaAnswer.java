@@ -4,10 +4,14 @@
  */
 package ex1;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  *
  * @author tal
  */
+//@XmlRootElement
 public class TriviaAnswer {
 
     private String answer;
@@ -16,5 +20,15 @@ public class TriviaAnswer {
     public TriviaAnswer(boolean isTrue, String answer){
         this.answer = answer;
         this.isTrue = isTrue;
+    }
+    
+    @XmlElement
+    public String getAnswer(){
+        return answer;
+    }
+    
+    @XmlElement
+    public boolean getIsTrue(){
+        return isTrue;
     }
 }
